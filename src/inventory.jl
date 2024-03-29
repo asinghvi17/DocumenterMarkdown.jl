@@ -7,6 +7,9 @@ to write the Sphinx inventory file used by DocumenterInterLinks and Intersphinx.
 By providing a Markdown context, you can use the `Documenter.HTMLWriters.write_inventory(doc, ___MarkdownContext(doc))` function 
 and provide it a `___MarkdownContext` object to generate the inventory file.
 
+In future, to accomodate e.g LaTeX or Typst formats, it is possible to override the `Documenter.HTMLWriters.geturl` function to 
+return the correct flattened link for the given format.
+
 =#
 
 """
